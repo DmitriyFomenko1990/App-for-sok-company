@@ -1,0 +1,41 @@
+.container{}
+.title{}
+.wrapper{
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+}
+.form{
+    margin: 0 50px;
+}
+.inputBlock{}
+.inputCalc{
+    padding: 5px;
+    font-size: 20px;
+    color: #e68d17;
+    font-weight: 600;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 4px black;
+    outline: none;
+}
+.inputCalc:focus{
+    box-shadow: 0px 0px 10px 4px #e7890b;
+    border: 0;
+}
+.result{
+    margin-top: 1.33em;
+    padding: 40px 10px;
+    background-color: #e7890b;
+    border-radius: 10px;
+    box-shadow: 1px 3px 9px 1px black;
+}
+.list{
+    list-style: none;
+    padding-left: 0;
+    font-size: 20px;
+}
+li{
+    color: black;
+    padding-bottom: 20px;
+}

@@ -1,0 +1,28 @@
+.appNavigation {
+    max-width: 940px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(54, 54, 54);
+    border-radius: 20px;
+    box-shadow: 0 0 10px;
+
+}
+
+.item {
+    padding: 30px 20px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.item a {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.item a.active {
+    color: #e7890b;
+}

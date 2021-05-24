@@ -1,0 +1,20 @@
+.education{}
+
+.title{
+    margin: 0 auto;
+}
+.list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+}
+a {
+    text-decoration: none;
+}
+li{
+    padding: 0 10px;
+    cursor: pointer;
+    color: gray;
+    font-weight: 600;
+}
