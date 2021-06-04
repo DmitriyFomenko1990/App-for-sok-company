@@ -4,13 +4,19 @@
     display: flex;
     justify-content: space-between;
 
+    @media only screen and (max-width: 992px) {
+    }
+
+    @media only screen and (max-width: 600px) {
+        display: none;
+    }
+
 }
 
 .navigationBox {
 
 
 }
-
 
 
 .imgBack {

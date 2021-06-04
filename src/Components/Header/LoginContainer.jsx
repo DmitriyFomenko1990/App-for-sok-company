@@ -4,7 +4,7 @@ import {connect} from "react-redux";
 import {logoutThunk} from "../../Redux/auth-reducer";
 
 
-class LoginConteiner extends React.Component {
+class LoginContainer extends React.Component {
     render() {
         return <Login  userData={this.props.userData} onLogout={this.props.logoutThunk}/>
     };
@@ -15,4 +15,4 @@ let mapStateToProps = (state) => {
     };
 };
 
-export default connect(mapStateToProps, {logoutThunk})(LoginConteiner);
+export default connect(mapStateToProps, {logoutThunk})(LoginContainer);

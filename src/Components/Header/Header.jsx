@@ -1,7 +1,7 @@
 import React from 'react'
-import style from './Header.module.css'
+import style from './Header.module.scss'
 import Navigation from "../Navigation/Navigation";
-import LoginConteiner from "./LoginConteiner";
+import LoginContainer from "./LoginContainer";
 import sok from "../../img/sokbgi.png";
 
 
@@ -13,7 +13,7 @@ const Header = () => {
             </div>
             <div><Navigation className={style.navigationBox}/></div>
 
-            <div><LoginConteiner /></div>
+            <div><LoginContainer /></div>
         </header>
     )
 }

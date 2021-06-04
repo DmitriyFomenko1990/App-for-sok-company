@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./App.css";
 import Header from './Components/Header/Header';
-import Messages from "./Components/MainPages/Messages/Messages";
+import Objects from "./Components/MainPages/Objects/Objects";
 import {Route} from "react-router-dom";
 import Education from "./Components/MainPages/Education/Education";
 import Developers from "./Components/MainPages/Developers/Developers";
@@ -19,7 +19,7 @@ let SokAgency = () => {
 
             <div className={style.content}>
                 <Route path='/profile/:userID?' render={() => <ProfileContainer/>}/>
-                <Route path='/messages' render={() => <Messages/>}/>
+                <Route path='/messages' render={() => <Objects/>}/>
                 <Route path='/users' render={() => <UsersContainer/>}/>
                 <Route path='/tools' render={() => <Developers/>}/>
                 <Route path='/settings' component={Education}/>
