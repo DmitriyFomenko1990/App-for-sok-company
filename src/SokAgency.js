@@ -10,7 +10,7 @@ import UsersContainer from "./Components/MainPages/Users/UsersContainer";
 import LoginPage from "./Components/MainPages/LoginPage/LoginPage";
 
 
-let SokAgency = (props) => {
+let SokAgency = () => {
     return (
         <div className={style.wrapper}>
 

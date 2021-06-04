@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import style from './Calc.module.css'
-import {NavLink} from "react-router-dom";
 import {creditCalc} from "../../../Tools/creditCalc";
 
 

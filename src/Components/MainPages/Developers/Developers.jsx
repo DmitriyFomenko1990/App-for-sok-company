@@ -7,8 +7,6 @@ import family from "../../../img/developers/family.jpg"
 import gik from "../../../img/developers/gik.jpg"
 import kvartal from "../../../img/developers/kvartal.jpg"
 import {compose} from "redux";
-import {connect} from "react-redux";
-import {follow, requestUsers, setTotalUsers, unfollow, updatePage} from "../../../Redux/users-reducer";
 import {withAuthRedirect} from "../../../hoc/withAuthRedirect";
 
 

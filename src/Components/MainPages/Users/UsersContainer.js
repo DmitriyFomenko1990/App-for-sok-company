@@ -1,9 +1,8 @@
 import React from "react";
 import {connect} from "react-redux";
 import {
-    follow, requestUsers,
+    requestUsers,
     setTotalUsers,
-    unfollow,
     updatePage
 } from "../../../Redux/users-reducer";
 import Users from "./Users";
@@ -31,8 +30,7 @@ class UsersContainer extends React.Component {
                       usersPageNumber={this.props.usersPageNumber}
                       users={this.props.users}
                       changePage={this.changePage}
-                      follow={this.props.follow}
-                      unfollow={this.props.unfollow}
+
                       isReceivedStatus={this.props.isReceivedStatus}
                       isAuth={this.props.isAuth}
         />
@@ -48,5 +46,5 @@ const mapStateToProps = (state) => {
     }
 };
 export default compose(
-    connect(mapStateToProps,{follow, unfollow, setTotalUsers, updatePage, getUsers: requestUsers}),
+    connect(mapStateToProps,{setTotalUsers, updatePage, getUsers: requestUsers}),
     withAuthRedirect)(UsersContainer);

@@ -25,10 +25,6 @@ const Users = (props) => {
                 <NavLink to={`/profile/${u.id}`}>
                     <img alt={'err'} className={style.userAvatar} src={u.photos.small ? u.photos.small : logo1}/>
                 </NavLink>
-                <div className={style.button}>{u.isFallow
-                    ? <button onClick={() => props.unfollow(u.id)}>FOLLOW</button>
-                    : <button onClick={() => props.follow(u.id)}>UNFOLLOW</button>}
-                </div>
             </div>
             <div className={style.infoBlock}>
                 <div className={style.userInfo}>name: {u.name}</div>

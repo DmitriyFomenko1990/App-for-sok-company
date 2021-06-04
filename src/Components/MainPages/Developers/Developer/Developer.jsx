@@ -1,6 +1,5 @@
 import React from "react";
 import style from "./developer.module.css"
-import {NavLink} from "react-router-dom";
 import ask from "../../../../img/developers/ask.png"
 
 

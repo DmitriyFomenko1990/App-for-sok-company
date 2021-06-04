@@ -2,7 +2,7 @@ import React from "react";
 import {Field, reduxForm} from "redux-form";
 import style from './LoginPage.module.css';
 import styleErr from "../../Tools/FormsControls.module.css"
-import {alphaNumeric, minLength5, required} from "../../ utilities/Validators/formValidator";
+import {alphaNumeric, minLength5, required} from "../../utilities/Validators/formValidator";
 import {Input} from "../../Tools/FormsControls";
 import {connect} from "react-redux";
 import {loginThunk} from "../../../Redux/auth-reducer";

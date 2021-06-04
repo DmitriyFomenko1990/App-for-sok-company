@@ -21,14 +21,17 @@ const HeadData = (props) => {
                 {props.isOwner && <input type={"file"} onChange={onChangePhoto}/>}
             </div>
             <div className='profilData'>
-                <div className={style.status}><ProfileStatusWithHooks updateStatus={props.updateStatus} status={props.status}/></div>
+                <div className={style.status}><ProfileStatusWithHooks
+                        updateStatus={props.updateStatus}
+                        status={props.status}
+                        isOwner={props.isOwner}/></div>
                 <div className={style.name}>{props.data.fullName}</div>
                 <div>
                     <ul className={style.profilList}>
                         <li>Info:{props.data.lookingForAJobDescription}</li>
                         <li>about me: {props.data.aboutMe}</li>
-                        <li>Education: Kubgu`13</li>
-                        <li>webSite: https://github.com/DmitriyFomenko1990</li>
+                        <li>Education: </li>
+                        <li>webSite: </li>
                     </ul>
                 </div>
             </div>

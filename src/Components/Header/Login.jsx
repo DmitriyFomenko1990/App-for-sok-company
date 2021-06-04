@@ -8,7 +8,7 @@ const Login = (props) => {
         return <div>Войти</div>
     }
     return (<div className={style.log}>
-        <img src={smallAva}/>
+        <img src={smallAva} alt={'Аватар'}/>
         <div className={style.name}>{props.userData.login}</div>
         <button onClick={props.onLogout} className={style.btn}>Выйти</button>
     </div>)

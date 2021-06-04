@@ -7,6 +7,7 @@ import {withAuthRedirect} from "../../../hoc/withAuthRedirect";
 import {compose} from "redux";
 
 class ProfileContainer extends React.Component {
+
     loadProfileData(){
         let userID = this.props.match.params.userID;
         if (!userID) {
@@ -26,6 +27,7 @@ class ProfileContainer extends React.Component {
             this.loadProfileData()
         }
     }
+
     render() {
         return <Profile { ...this.props} isOwner={!this.props.match.params.userID} />
     }
@@ -37,7 +39,6 @@ const mapStateToProps = (state) => {
         status: state.profilePage.status,
         authorizedUserId: state.auth.id,
         isAuth: state.auth.isAuth,
-
     }
 };
 export default compose(

@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <header className={style.container}>
             <div><img className={style.imgBack}
-                      src={sok} />
+                      src={sok} alt={'СОК'}/>
             </div>
             <div><Navigation className={style.navigationBox}/></div>
 
