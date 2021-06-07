@@ -1,13 +1,13 @@
 import React from "react";
 import style from "./App.css";
-import Header from './Components/Header/Header';
-import Objects from "./Components/MainPages/Objects/Objects";
+import Header from './Components/header/Header';
+import Objects from "./Components/mainPages/objects/Objects";
 import {Route} from "react-router-dom";
-import Education from "./Components/MainPages/Education/Education";
-import Developers from "./Components/MainPages/Developers/Developers";
-import ProfileContainer from "./Components/MainPages/Profile/ProfileContainer";
-import UsersContainer from "./Components/MainPages/Users/UsersContainer";
-import LoginPage from "./Components/MainPages/LoginPage/LoginPage";
+import Education from "./Components/mainPages/education/Education";
+import Developers from "./Components/mainPages/developers/Developers";
+import ProfileContainer from "./Components/mainPages/profile/ProfileContainer";
+import UsersContainer from "./Components/mainPages/users/UsersContainer";
+import LoginPage from "./Components/mainPages/loginPage/LoginPage";
 
 
 let SokAgency = () => {

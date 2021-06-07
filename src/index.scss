@@ -1,4 +1,10 @@
 @import "~bootstrap/scss/bootstrap";
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 body {
   margin: 0;
   height: 100%;

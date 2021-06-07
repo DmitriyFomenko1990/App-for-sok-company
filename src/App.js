@@ -1,20 +1,21 @@
 import React from "react";
 import  "./App.css";
-import Header from './Components/Header/Header';
-import Objects from "./Components/MainPages/Objects/Objects";
+import Header from './Components/header/Header';
+import Objects from "./Components/mainPages/objects/Objects";
 import {Redirect, Route, Switch, withRouter} from "react-router-dom";
-import Education from "./Components/MainPages/Education/Education";
-import Developers from "./Components/MainPages/Developers/Developers";
-import ProfileContainer from "./Components/MainPages/Profile/ProfileContainer";
-import UsersContainer from "./Components/MainPages/Users/UsersContainer";
-import LoginPage from "./Components/MainPages/LoginPage/LoginPage";
+import Education from "./Components/mainPages/education/Education";
+import Developers from "./Components/mainPages/developers/Developers";
+import ProfileContainer from "./Components/mainPages/profile/ProfileContainer";
+import UsersContainer from "./Components/mainPages/users/UsersContainer";
+import LoginPage from "./Components/mainPages/loginPage/LoginPage";
 import {connect} from "react-redux";
 import {compose} from "redux";
 import {initializeApp} from "./Redux/app-reducer";
-import Preloader from "./Components/Tools/Preloader";
-import Developer from "./Components/MainPages/Developers/Developer/Developer";
-import NotFound from "./Components/Tools/NotFound";
-import MyObject from "./Components/MainPages/Objects/object/Object";
+import Preloader from "./Components/mainPages/news/tools/Preloader";
+import Developer from "./Components/mainPages/developers/developer/Developer";
+import NotFound from "./Components/mainPages/news/tools/NotFound";
+import MyObject from "./Components/mainPages/objects/object/Object";
+import News from "./Components/mainPages/news/News";
 
 class App extends React.Component {
     catchAllUnhandledErrors = (promiseRejectionEvent) => {
@@ -46,6 +47,7 @@ class App extends React.Component {
                         <Route path='/education/' render={() =><Education/>} />
                         <Route path='/login' render={() => <LoginPage/>}/>
                         <Route path='/developer' render={() => <Developer/>}/>
+                        <Route path='/news' render={() => <News/>}/>
                         <Route path='*' render={() => <NotFound/>}/>
                     </Switch>
                 </div>
