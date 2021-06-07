@@ -62,10 +62,10 @@ const MyObject = () => {
                 </div>
                 <div className={style.contacts}>
                     <ul>
-                        <li>Цена: 10 000 000 руб</li>
-                        <li>Менеджер: Иван Иваныч</li>
-                        <li>тел: 8 888 888 88 88</li>
-                        <li>Адрес: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, rem!</li>
+                        <li><strong>Цена:</strong> 10 000 000 руб</li>
+                        <li><strong>Менеджер:</strong> Иван Иваныч</li>
+                        <li><strong>тел:</strong> 8 888 888 88 88</li>
+                        <li><strong>Адрес:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, rem!</li>
                     </ul>
                     <div className={style.buttons}>
                         <Button variant="primary">Редактировать</Button>
@@ -73,7 +73,6 @@ const MyObject = () => {
                     </div>
                 </div>
             </div>
-
             <div className={style.info}>
                 <h4>Описание:</h4>
             </div>

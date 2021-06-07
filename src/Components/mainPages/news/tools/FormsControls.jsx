@@ -1,7 +1,6 @@
 import style from './FormsControls.module.css'
 
 export const Input = ({input, meta, placeholder, type,  meta: { touched, error, warning }}) =>{
-
     return <div>
         <input {...input}
                type={type}
@@ -11,4 +10,4 @@ export const Input = ({input, meta, placeholder, type,  meta: { touched, error, 
         ((error && <span>{error}</span>) ||
             (warning && <span>{warning}</span>))}
     </div>
-}
+};

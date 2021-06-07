@@ -1,8 +1,6 @@
 import React from "react";
-import style from "./developer.module.css"
-import ask from "../../../../img/developers/ask.png"
-
-
+import style from "./developer.module.css";
+import ask from "../../../../img/developers/ask.png";
 
 const Developer = () => {
   return (
@@ -24,4 +22,4 @@ const Developer = () => {
     </div>
   )
 }
-export default Developer
+export default Developer;

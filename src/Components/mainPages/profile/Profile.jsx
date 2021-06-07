@@ -15,7 +15,7 @@ const Profile = (props) => {
             {Posts(props.postsObj)}
         </div>
     )
-}
+};
 const Post = props =>  <div>{props.message}</div>;
 
 function Posts(Arrey) {

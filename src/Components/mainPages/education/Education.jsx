@@ -6,7 +6,6 @@ import {withAuthRedirect} from "../../../hoc/withAuthRedirect";
 import Calc from "./calc/Calc";
 import Mortgage from "./mortgage/Mortgage";
 
-
 const Education = () => {
     return (
         <div className={style.education}>
@@ -29,7 +28,6 @@ const Education = () => {
                     </NavLink></li>
                 </ul>
             </div>
-
             <Switch>
                 <Route path='/education/new-employee' render={() => <Calc/>}/>
                 <Route path='/education/sales' render={() => <Calc/>}/>
@@ -39,5 +37,5 @@ const Education = () => {
             </Switch>
         </div>
     )
-}
+};
 export default compose(withAuthRedirect)(Education);

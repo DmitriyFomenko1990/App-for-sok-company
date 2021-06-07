@@ -1,10 +1,10 @@
-import React from 'react';
-import style from './Navigation.module.css';
+import React from "react";
+import style from "./Navigation.module.css";
 import {NavLink} from "react-router-dom";
 
 const Navigation = () => {
     return (
-        <div>
+        <div className={style.container}>
             <nav className={style.appNavigation}>
                 <div className={style.item}>
                     <NavLink to="/profile/" activeClassName={style.active}>Профиль</NavLink></div>

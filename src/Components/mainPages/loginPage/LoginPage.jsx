@@ -1,13 +1,12 @@
 import React from "react";
 import {Field, reduxForm} from "redux-form";
 import style from './LoginPage.module.css';
-import styleErr from "../news/tools/FormsControls.module.css"
+import styleErr from "../news/tools/FormsControls.module.css";
 import {alphaNumeric, minLength5, required} from "../../utilities/validators/formValidator";
 import {Input} from "../news/tools/FormsControls";
 import {connect} from "react-redux";
 import {loginThunk} from "../../../Redux/auth-reducer";
 import {Redirect} from "react-router-dom";
-
 
 const LoginForm = (props) => {
     return <form onSubmit={props.handleSubmit}>
@@ -29,11 +28,8 @@ const LoginForm = (props) => {
             <button>submit</button>
         </div>
     </form>
-
 };
-
 const LoginReduxForm = reduxForm({form: 'login'})(LoginForm);
-
 const LoginPage = (props) => {
     const onSubmit = (formData) => {
         props.loginThunk(formData);
@@ -46,13 +42,11 @@ const LoginPage = (props) => {
         <LoginReduxForm onSubmit={onSubmit}/>
     </div>
 };
-
 let mapStateToProps = (state) => {
     return {
         isAuth: state.auth.isAuth,
     }
-}
-
-export default connect(mapStateToProps, {loginThunk})(LoginPage)
+};
+export default connect(mapStateToProps, {loginThunk})(LoginPage);
 
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import style from "../Education.module.scss"
+import style from "../Education.module.scss";
 
 const DocList = () => {
     return (

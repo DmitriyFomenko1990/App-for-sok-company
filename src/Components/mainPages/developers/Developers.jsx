@@ -1,15 +1,13 @@
 import React from "react";
-import style from './developers.module.css'
+import style from './developers.module.css';
 import {NavLink} from "react-router-dom";
-import ask from "../../../img/developers/ask.png"
-import bsfc from "../../../img/developers/bsfc.jpg"
-import family from "../../../img/developers/family.jpg"
-import gik from "../../../img/developers/gik.jpg"
-import kvartal from "../../../img/developers/kvartal.jpg"
+import ask from "../../../img/developers/ask.png";
+import bsfc from "../../../img/developers/bsfc.jpg";
+import family from "../../../img/developers/family.jpg";
+import gik from "../../../img/developers/gik.jpg";
+import kvartal from "../../../img/developers/kvartal.jpg";
 import {compose} from "redux";
 import {withAuthRedirect} from "../../../hoc/withAuthRedirect";
-
-
 
 const Developers = () => {
   return (
@@ -42,5 +40,4 @@ const Developers = () => {
     </div>
   )
 }
-
 export default compose(withAuthRedirect)(Developers);
