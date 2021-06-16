@@ -2,6 +2,8 @@ import React from 'react';
 import style from './news.module.scss';
 import logo from '../../../img/logo3.jpg'
 import {Button} from "react-bootstrap";
+import {compose} from "redux";
+import {withAuthRedirect} from "../../../hoc/withAuthRedirect";
 
 const News = () => {
     return (
@@ -37,4 +39,4 @@ const News = () => {
     );
 };
 
-export default News;
+export default compose(withAuthRedirect)(News);

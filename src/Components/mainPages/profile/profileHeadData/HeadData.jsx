@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./HeadData.module.scss";
-import Preloader from "../../news/tools/Preloader";
+import Preloader from "../../../../tools/Preloader";
 import logo from "../../../../img/logo1.jpg";
 import ProfileStatusWithHooks from "./ProfileStatusWithHooks";
 

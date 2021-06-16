@@ -3,6 +3,8 @@ import style from './Objects.module.scss';
 import image from "../../../img/objects/2_1.jpg"
 import {NavLink} from "react-router-dom";
 import {Button, Card} from "react-bootstrap";
+import {compose} from "redux";
+import {withAuthRedirect} from "../../../hoc/withAuthRedirect";
 
 const Objects = () => {
     return (
@@ -124,4 +126,4 @@ const Objects = () => {
         </div>
     )
 }
-export default Objects;
+export default compose(withAuthRedirect)(Objects);

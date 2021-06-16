@@ -1,6 +1,6 @@
 import style from './Users.module.css';
 import React from 'react';
-import Preloader from '../news/tools/Preloader';
+import Preloader from '../../../tools/Preloader';
 import logo1 from '../../../img/logo1.jpg';
 import {NavLink} from "react-router-dom";
 

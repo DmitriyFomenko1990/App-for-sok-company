@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import style from './Calc.module.css'
-import {creditCalc} from "../../news/tools/creditCalc";
+import {creditCalc} from "../../../../tools/creditCalc";
 
 
 

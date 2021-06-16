@@ -1,0 +1,25 @@
+.checkBoxText{
+    font-size: 15px;
+    font-weight: lighter;
+}
+.form{
+    margin: 50px auto;
+}
+.field{
+    width: 300px;
+}
+.remember{
+    display: inline-block;
+}
+.button{
+    color: #fff;
+    background-color: #28a745;
+    width: 110px;
+    height: 34px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    &:hover{
+        background-color: #238d3b;
+    }
+    transition: all 500ms;
+}
