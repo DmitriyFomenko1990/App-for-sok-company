@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import style from './Calc.module.css'
+import style from './Calc.module.scss'
 import {creditCalc} from "../../../../tools/creditCalc";
 
 
