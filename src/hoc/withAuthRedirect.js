@@ -21,3 +21,7 @@ export  const withAuthRedirect = (Component) => {
 
     return ConnectedAuthRedirectComponent;
 }
+
+
+var a = 10 / 'abc';
+console.log(typeof a === 'number'); // false;
