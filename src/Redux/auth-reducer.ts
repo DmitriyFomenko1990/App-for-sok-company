@@ -56,3 +56,5 @@ export const logoutThunk = () => async (dispatch: any) => {
 };
 
 export default authReducer;
+
+
